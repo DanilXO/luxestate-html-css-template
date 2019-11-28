@@ -3,9 +3,10 @@
     margin: 0;
     font-family: 'Roboto Condensed', sans-serif;
 }
-
 body, html {
     overflow-x: hidden;
+    padding: 0;
+    margin: 0;
 }
 
 nav {
@@ -51,6 +52,55 @@ nav {
 .menu li a.contacts {
     margin-right: 50px;
 }
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.intro {
+    margin-top: 25px;
+    display: flex;
+    justify-content: right;
+    max-height: 644px;
+}
+.intro-img {
+    background: url(img/room.jpg) 100% 100% no-repeat;
+    background-size: cover; 
+    width: 2521px;
+    height: 644px;
+}
+
+.intro .intro-text {
+    margin-left: 8%;
+    margin-top: 18%;
+    font-size: 62px;
+    right: 950px;
+    top: 300px;
+}
+
+.intro-contacts {
+    background-color: #ffcc01;
+    max-width: 590px;
+    position: absolute;
+    right: 410px;
+    top: 638px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+
+.intro-contacts i {
+    color: #fff;
+    margin-right: 30px;
+}
+
+.intro-contacts p {
+    font-size: 18px;
+    margin-right: 60px;
+}
+
 
 @media screen and (max-width:765px) {
     .toggle {
@@ -105,4 +155,30 @@ nav {
     .menu li a.contacts {
         margin-right: 0px;
     }
+    .intro {
+        margin-top: 0;
+        display: block;
+        max-width: 100%;
+    }
+    .intro .intro-text{
+        margin: 0 auto;
+        position: relative;
+        font-size: 35px;
+        top: 300px;
+        right: -10px;
+    }
+
+    .intro .intro-contacts{
+        right: 0px;
+        top: -60px;
+        padding: 20px 20px;
+        position: relative;
+    }
+    .intro-contacts i{
+        margin-right: 10px;
+    }
+    .intro-contacts p{
+        margin-right: 0px;
+    }
+
 }
