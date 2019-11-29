@@ -105,6 +105,7 @@ nav {
 .stats {
     display: flex;
     margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .stats-line {
@@ -147,10 +148,112 @@ nav {
     font-size: 14px;
 }
 
+.apartments {
+    background: #f6f5f6;
+    padding: 60px 0;
+}
+.apart h2{
+    margin-bottom: 85px;
+    font-size: 40px;
+}
+.card {
+    max-width: 350px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.card-container {
+    padding: 25px;
+}
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.card-info .money{
+    font-size: 18px;
+    color: #ffcc01;
+}
+.card-info i {
+    margin-right: 8px;
+}
+.card-info span:first-child {
+    margin-right: 18px;
+}
+.card img{
+    min-width: 100%;
+    height: 380px;
+}
+.card:hover {
+    background: #fafafa;
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.7);
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+}
+
+.apart input[type=text] {
+    margin-top: 50px;
+    width: 300px;
+    height: 70px;
+    border: none;
+    background-image: url(img/search-solid.svg);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 27px;
+    outline: none;
+    padding-left: 62px;
+    font-size: 15px;
+    color: #919eb1;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.apart input[type=submit] {
+    width: 115px;
+    height: 70px;
+    border: none;
+    background: #ffcc01;
+    font-size: 15px;
+    margin-left: -4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.buttons-search {
+    display: flex;
+}
+
+.viewAllButton {
+    width: 250px;
+    height: 70px;
+    background: #ffcc01;
+    border: none;
+    border-radius: 4px;
+    margin-left: 40px;
+    margin-top: 52px;
+    font-size: 15px;
+}
+
 @media screen and (max-width:1022px) {
         /* Адаптивное меню */
     .menu li a.logo {
         margin-right: 100px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .card{
+        min-width: 95%;
+        max-height: 95%;
+        margin: 2.5%;
+    }
+    .apart h2{
+        margin-left: 15px;
+        margin-bottom: 50px;
     }
 }
 
@@ -235,7 +338,7 @@ nav {
     }
 
     .stats{
-        margin-top: 0;
+        margin-top: 30px;
         flex-direction: column;
     }
     .stats-text {
@@ -243,7 +346,7 @@ nav {
     }
     .stats-text h2{
         font-size: 30px;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
 
     .stats-text p{
@@ -272,8 +375,51 @@ nav {
     .square .square-text {
         font-size: 12px;
     }
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: center;
+    }
 }
-
+@media screen and (max-width:600px) {
+    .intro-contacts p{
+        padding-bottom: 0.4em;
+        font-size: 0.8em;
+    }
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-row-gap: 10px;
+        justify-items: center;
+    }
+    .apart input[type=text] {
+        margin-top: 20px;
+        max-width: 150px;
+    }
+    .apart input[type=submit] {
+        max-width: 90px;
+    }
+    .buttons-search {
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+        max-width: 350px;
+    }
+    .viewAllButton {
+        background: #fff;
+        margin-top: 10px;
+        margin-left: 0;
+        width: 95%;
+    }
+    .card{
+        min-width: 95%;
+        margin: 2.5%;
+    }
+    .card img{
+        min-width: 100%;
+        height: 380px;
+    }
+}
 
 @media screen and (max-width:380px) {
     .intro-contacts p{
