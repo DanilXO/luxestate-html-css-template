@@ -102,7 +102,50 @@ nav {
     margin-right: 60px;
 }
 
+.stats {
+    display: flex;
+    margin-top: 130px;
+}
 
+.stats-line {
+    display: flex;
+}
+
+.stats-text {
+    padding: 40px;  
+}
+
+.stats-text h2 {
+    font-size: 40px;
+    margin-bottom: 70px;
+}
+
+.stats-text p {
+    margin-top: 50px;
+    font-size: 13px;
+    line-height: 27px;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: #f6f5f4;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.square .stats-square{
+    font-size: 40px;
+    color: #ffcc01;
+    margin-bottom: 15px;
+}
+
+.square .square-text {
+    font-size: 14px;
+}
 
 @media screen and (max-width:1022px) {
         /* Адаптивное меню */
@@ -189,6 +232,45 @@ nav {
     }
     .intro-contacts p{
         margin-right: 10px;
+    }
+
+    .stats{
+        margin-top: 0;
+        flex-direction: column;
+    }
+    .stats-text {
+        padding: 10px;
+    }
+    .stats-text h2{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .stats-text p{
+        margin-top: 10px;
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .stats-num {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .square {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 0;
+        height: 140px;
+        width: 140px;
+    }
+    .square .stats-square{
+        font-size: 28px;
+        color: #ffcc01;
+        margin-bottom: 15px;
+    }
+    
+    .square .square-text {
+        font-size: 12px;
     }
 }
 
