@@ -305,6 +305,43 @@ nav {
     border-bottom: 3px solid #fff;
 }
 
+.serv-container {
+    display: flex;
+    margin-top: 50px;
+}
+.serv-img-container img {
+    max-height: 650px;
+    width: 100%;
+    height: auto;
+}
+.serv-img-container {
+    width: 58%;
+}
+.serv-img-container img {
+    width: 100%;
+    height: auto;
+}
+.serv-text {
+    width: 42%; 
+    margin-left: 3%;
+}
+.serv-text p {
+    margin-bottom: 60px;
+}
+
+.services h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.services p {
+    font-size: 13px;
+    line-height: 30px;
+}
+.services h4 {
+    font-size: 25px;
+    margin-top: 30px;
+}
+
 @media screen and (max-width:1022px) {
         /* Адаптивное меню */
     .menu li a.logo {
@@ -337,6 +374,9 @@ nav {
     .step-num {
         margin-top: 3%;
         margin-left: 3%;
+    }
+    .services-title, .services-description{
+        margin-left: 15px;
     }
 }
 
@@ -462,6 +502,17 @@ nav {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         justify-items: center;
+    }
+    .serv-container{
+        flex-direction: column;
+    }
+    .serv-img-container {
+        margin-left: 1%;
+        margin-right: 1%;
+        width: 98%;
+    }
+    .serv-text {
+        width: 94%;
     }
     
 }
